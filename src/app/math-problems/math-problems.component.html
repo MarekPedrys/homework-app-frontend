@@ -1,1 +1,29 @@
 <p>math-problems works!</p>
+
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Klasa</th>
+            <th>Poziom</th>
+            <th>Dział</th>
+            <th>Punkty</th>
+            <th>Treść</th>
+            <th>Rozwiązanie</th>
+            <th>Info</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of mathProblems">
+            <th>{{p.id}}</th>
+            <th>{{p.yearOfStudy}}</th>
+            <th>{{p.level}}</th>
+            <th>{{p.department}}</th>
+            <th>{{p.points}}</th>
+            <th>{{p.content}}</th>
+            <th>{{p.solution}}</th>
+            <th>{{p.info}}</th>
+        </tr>
+
+    </tbody>
+</table>
