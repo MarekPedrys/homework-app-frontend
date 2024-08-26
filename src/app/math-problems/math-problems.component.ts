@@ -18,9 +18,9 @@ export class MathProblemsComponent implements OnInit {
     this.fetchMathProblems();
   }
 
-  fetchMathProblems() {
+  fetchMathProblems() {    
     this.apiService.getMathProblems().subscribe(
-      mathProblems => this.mathProblems = mathProblems
+      mathProblemPage => this.mathProblems = mathProblemPage.content
     )
   }
 

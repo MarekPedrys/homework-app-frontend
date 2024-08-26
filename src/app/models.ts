@@ -5,7 +5,10 @@ export interface MathProblem {
     department: string;
     points: number;
     content: string;
-    solution: string;
-    info: string;
-    archived: boolean;
+}
+
+export interface MathProblemPage {
+    content: MathProblem[];
+    pageNumber: number;
+    totalPages: number;
 }
