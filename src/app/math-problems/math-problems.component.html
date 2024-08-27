@@ -1,27 +1,26 @@
 <p>math-problems works!</p>
 
-<div class="card shadow p-3 mb-5 bg-white rounded mx-auto" style="width: 90%">
+<div class="card shadow p-2 bg-white rounded mx-auto" style="width: 90%">
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>Klasa</th>
-                <th>Poziom</th>
+                <th class="d-none d-md-table-cell">Id</th>
                 <th>Dział</th>
+                <th class="d-none d-md-table-cell">Klasa</th>
+                <th>Poziom</th>
                 <th>Punkty</th>
-                <th>Treść</th>
+                <th class="d-none d-md-table-cell">Treść</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let p of mathProblems">
-                <td>{{p.id}}</td>
-                <td>{{p.yearOfStudy}}</td>
-                <td>{{p.level}}</td>
+                <td class="d-none d-md-table-cell">{{p.id}}</td>
                 <td>{{p.department}}</td>
+                <td class="d-none d-md-table-cell">{{p.yearOfStudy}}</td>
+                <td>{{p.level}}</td>
                 <td>{{p.points}}</td>
-                <td>{{p.content}}</td>
+                <td class="d-none d-md-table-cell">{{p.content}}</td>
             </tr>
-
         </tbody>
     </table>
 
