@@ -24,4 +24,14 @@
 
         </tbody>
     </table>
+
+    <nav *ngIf="totalPages>1" class="d-flex justify-content-end">
+        <ul class="pagination pagination-sm">
+            <li class="page-item" [ngClass]="{'active':pageNumber === i}"
+                *ngFor="let item of [].constructor(totalPages); let i = index">
+                <a class="page-link" (click)="fetchMathProblems(i)">{{i+1}}</a>
+            </li>
+        </ul>
+    </nav>
+
 </div>
